@@ -1,2 +1,2 @@
 # Programing-Notes
-This repository contains programing notes made by philip0000000.
+This repository contains programming notes made by philip0000000.
