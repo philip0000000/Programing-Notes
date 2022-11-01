@@ -1,0 +1,73 @@
+===( Data structure alignment )===
+(https://en.wikipedia.org/wiki/Data_structure_alignment)
+
+int main[]
+
+int val = f(), 1; // function f() returns void, but val, will be 1, as indicator that function f() has executed
+
+//TODO:
+comparesion heap vs stack
+(https://stackoverflow.com/questions/24057331/is-accessing-data-in-the-heap-faster-than-from-the-stack)
+
+===( calling conventions )===
+//https://en.wikipedia.org/wiki/X86_calling_conventions
+//https://stackoverflow.com/questions/52088861/c-calling-convention-parameter-passing
+
+#include <iostream>
+
+
+bool CallingConventions(int v0, int v1)
+{
+	std::cout << &v0 << "\n"; //if v1 is bigger... it is some calling convention...
+	std::cout << &v1;
+
+	return true;
+}
+
+int main()
+{
+	CallingConventions(1, 2);
+
+	int temp;
+	std::cin >> temp;
+
+	return 0;
+}
+
+===( Little and Big Endian )===
+#include <stdio.h>
+
+int main()
+{
+    unsigned int i = 11223344;
+    char* c = (char*)&i;
+    printf("%d", (int)*c);
+    if (*c)
+        printf("Little endian");
+    else
+        printf("Big endian");
+    getchar();
+    return 0;
+}
+
+===( Duff's Device )===
+send(to, from, count)
+register short *to, *from;
+register count;
+{
+    register n = count / 8;
+    do {
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+    } while (--n > 0);
+}
+
+
+
+
