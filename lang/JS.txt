@@ -1,0 +1,13 @@
+===( JS functional programing )===
+https://medium.com/nmc-techblog/practical-functional-programming-with-javascript-c1a9d2d0c6df
+0. arrays
+1. Promise chaining (_.getPromise().then(...).then(...).catch(...))
+2. Compose (_.compose(foo, bar, biz))
+3. pipeline operator* (5 |> double |> double |> increment |> double)
+4. High order functions
+
+
+
+
+
+
