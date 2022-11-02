@@ -1,13 +1,40 @@
 ===( Data structure alignment )===
 (https://en.wikipedia.org/wiki/Data_structure_alignment)
+this is not only for struct, but also for bool in C++, that are most likely converted to 4 byte/int by compilers, sometimes...
 
-int main[]
 
-int val = f(), 1; // function f() returns void, but val, will be 1, as indicator that function f() has executed
 
+===( int main[] )===
+int main[] // work for old c compilers
+
+
+
+===( determen if void function has executed )===
+#include <stdio.h>
+
+void f()
+{
+    printf("hello from f!\n");
+}
+
+int main()
+{
+    int val = 2;
+    val = (f(), 1); // add the value 1, to indicate that the function f() has been executed, even if it only returns void
+    printf("%d", val);
+
+    getchar();
+    return 0;
+}
+
+
+
+===( heav vs. stack )===
 //TODO:
 comparesion heap vs stack
 (https://stackoverflow.com/questions/24057331/is-accessing-data-in-the-heap-faster-than-from-the-stack)
+
+
 
 ===( calling conventions )===
 //https://en.wikipedia.org/wiki/X86_calling_conventions
@@ -50,6 +77,8 @@ int main()
     return 0;
 }
 
+
+
 ===( Duff's Device )===
 send(to, from, count)
 register short *to, *from;
@@ -69,5 +98,16 @@ register count;
 }
 
 
+
+===( arrays )===
+#include <stdio.h>
+int main()
+{
+    int arr[2] = { 1, 2 };
+    printf("%d%d", arr[0], 0[arr]);
+
+    getchar();
+    return 0;
+}
 
 
