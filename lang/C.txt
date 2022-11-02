@@ -5,7 +5,7 @@ this is not only for struct, but also for bool in C++, that are most likely conv
 
 
 ===( int main[] )===
-int main[] // work for old c compilers
+int main[] // works on old c compilers
 
 
 
