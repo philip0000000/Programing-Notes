@@ -1,3 +1,11 @@
+https://javascript.info/map-set
+===( map )===
+===( set )===
+
+
+
+
+
 ===( JS functional programing )===
 https://medium.com/nmc-techblog/practical-functional-programming-with-javascript-c1a9d2d0c6df
 0. arrays

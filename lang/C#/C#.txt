@@ -1,0 +1,46 @@
+===( Arrays )===
+(https://www.reddit.com/r/csharp/comments/wpw11f/how_often_are_multidimensional_arrays_and_jagged/)
+"From my experience: close to never."
+"I have only seen it at a job once and it was in a piece of legacy code I would consider spaghetti."
+
+---( Arrays )---
+int []  n = new int[10];
+n[3] = 4;
+
+---( Jagged Arrays )---
+int[][] jaggedArray = new int[3][,]; 	          // Jagged Arrays
+jaggedArray[0] = new int[2,4];
+jaggedArray[1] = new int[3,3];
+jaggedArray[2] = new int[3,6];
+jaggedArray[0][1, 3] = 99;
+jaggedArray[2][2, 5] = 123;
+// A jagged array cannot be created entirely with a single statement. Need to initialize the elements of a jagged array separately.
+// The number of rows will be fixed and must be declared.
+// But can vary the number of columns, which is multidimensional array.
+// only "[][]", not "[][][]"!
+string[][] fruits = new string[][] { new string[] { "Apple", "Apricot" }, new string[] { "Mango", "Orange", "Melon" } };
+Console.WriteLine(fruits[1][1]); // Orange
+
+---( Multidimensional Arrays )---
+int[,,] multidimensionalArrays = new int[4, 2, 1];    // Multidimensional Arrays
+multidimensionalArrays[1, 2, 0] = 123;
+
+---( System.Array )---
+Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the base class for all arrays in the CLR.
+
+enum Test
+{
+    test0,
+    test1,
+    test2
+}
+
+// ...
+
+Array values = Enum.GetValues(typeof(Test));
+
+
+
+
+
+

@@ -21,6 +21,11 @@ int main()
 {
     int val = 2;
     val = (f(), 1); // add the value 1, to indicate that the function f() has been executed, even if it only returns void
+/* Note: this can be writen as:
+f();
+val = 1;
+instead, but this is a use of this feature. I also read this was used "back in the day" on stack overflow.
+*/
     printf("%d", val);
 
     getchar();
