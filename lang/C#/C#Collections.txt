@@ -1,12 +1,55 @@
 (https://www.c-sharpcorner.com/UploadFile/736bf5/collection-in-C-Sharp/)
-
-
 (https://www.tutorialsteacher.com/csharp/csharp-collection)
+ * C# collection types are designed to store, manage and manipulate similar data more efficiently.
+ * .NET supports two types of collections, generic collections and non-generic collections.
+(Prior to .NET 2.0, it was just collections and when generics were added to .NET, generics collections were added as well.)
+---Non-generic---                          ---Generic---
+    ArrayList                                  List<T>
+    HashTable                               Dictionary<TKey,TValue>
+    SortedList                              SortedList<TKey,TValue>
+      Stack                                    Stack<T>
+      Queue                                    Queue<T>
+                                              Hashset<T>	; not often used?
+     BitArray							; not often used?
 
 
 
-https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections
+---( Non-Generic )---
+ * In non-generic collections, each element can represent a value of a different type.
+ * The collection size is not fixed.
 
+
+
+
+
+---( List<T> )---
+ * Generic List<T> contains elements of specified type. It grows automatically as you add elements in it, has methods for sorting, searching, and modifying it(list).
+ * generic version of the ArrayList
+
+https://www.tutorialsteacher.com/csharp/csharp-list
+
+
+
+---( ArrayList )---
+var arlist1 = new ArrayList();
+arlist1.Add(1);
+arlist1.Add("Bill");
+arlist1.Add(" ");
+arlist1.Add(true);
+arlist1.Add(4.5);
+arlist1.Add(null);
+
+foreach (var item in arlist)		// Iterate an ArrayList
+    Console.Write(item + ", ");
+
+arlist.Insert(1, "Second Item");	// Insert Elements in ArrayList
+
+arList.Remove(null); 		//Removes first occurance of null
+arList.RemoveAt(4); 		//Removes element at index 4
+arList.RemoveRange(0, 2);	//Removes two elements starting from 1st item (0 index)
+
+Console.WriteLine(arList.Contains(300)); // false
+Console.WriteLine(arList.Contains(4.5)); // true
 
 
 

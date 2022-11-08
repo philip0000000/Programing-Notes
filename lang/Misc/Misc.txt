@@ -1,0 +1,35 @@
+https://www.consulteer.com/is-c-still-relevant-in-2022-2/
+https://www.pluralsight.com/blog/software-development/everything-you-need-to-know-about-c-
+https://www.coursera.org/articles/what-is-python-used-for-a-beginners-guide-to-using-python
+
+
+
+===( Python used for )===
+Data analysis and machine learning
+Web development
+Automation or scripting
+Software testing and prototyping
+Everyday tasks
+
+===( C# used for )===
+Website development
+Windows applications
+Games
+[can be used for mobile(android, iphone) apps] (unity is very big on android?)
+
+===( C++ Used for )===
+Gaming
+Graphical User Interface (GUI)
+Operating Systems
+Browsers
+Embedded systems
+AR/VR
+machine learning?
+
+
+
+
+
+
+
+
