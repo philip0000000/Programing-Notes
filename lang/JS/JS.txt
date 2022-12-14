@@ -5,6 +5,12 @@ https://javascript.info/map-set
 
 
 
+TODO:
+https://dev.to/mlevkov/the-holy-trinity-map-filter-and-reduce-381e
+The Holy Trinity of Functional Programming: Map, Filter and Reduce
+
+
+
 
 ===( JS functional programing )===
 https://medium.com/nmc-techblog/practical-functional-programming-with-javascript-c1a9d2d0c6df
