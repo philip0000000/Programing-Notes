@@ -1,6 +1,9 @@
 
 
 
+TODO:
+https://www.youtube.com/@b001/shorts
+
 
 
 ===( tkinter )===
